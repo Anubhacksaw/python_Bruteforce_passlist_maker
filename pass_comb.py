@@ -1,7 +1,9 @@
 from itertools import product
 import string
+import sys
+from termcolor import colored, cprint
 import os
-print("Authore:-Anubhab Mukherjee")
+cprint('Authore:-Anubhab Mukherjee\n', 'red', attrs=['reverse', 'blink'])
 ch=int(input("\n1.Contains only Letters\n2.Contains only numbers\n3.Contains only letters and numbers\n4.Contains letter numbers and special charecters\n"))
 i=int(input("Enter the min length of the password: \n"))
 j=int(input("Enter the max length of the password: \n"))
@@ -24,5 +26,5 @@ for l in range (i,j+1):
 		   file.write('\n')
 size=os.path.getsize(name)
 print("Passfile created succesfully!!!!\nSize of the passfile is",size,"bytes")
-
+cprint('\n https://github.com/Anubhab-ai\n', 'yellow')
 
